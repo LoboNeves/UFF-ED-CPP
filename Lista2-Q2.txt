@@ -1,0 +1,76 @@
+Questão 2
+
+A)
+
+Árvore inicial:
+            20
+        10      15
+      4    7  8    3
+    1  2
+vetor: [20, 10, 15, 4, 7, 8, 3, 1, 2]
+
+Passo 1: Deletando o item de maior prioridade (20) e substituindo pelo último elemento do último nível:
+            2
+        10      15
+      4    7  8    3
+    1  
+vetor: [2, 10, 15, 4, 7, 8, 3, 1]
+
+Passo 2: Troca o 2 com o 10:
+            10
+        2       15
+      4    7  8    3
+    1  
+vetor: [10, 2, 15, 4, 7, 8, 3, 1]
+
+Passo 3: Troca o 2 com o 4:
+            10
+        4       15
+      2    7  8    3
+    1  
+vetor: [10, 4, 15, 2, 7, 8, 3, 1]
+
+Passo 4: Troca o 4 com o 7:
+            10
+        7       15
+      2    4  8    3
+    1  
+vetor: [10, 7, 15, 2, 4, 8, 3, 1]
+
+Passo 5: Troca o 10 com o 15:
+            15
+        7       10
+      2    4  8    3
+    1  
+vetor: [15, 7, 10, 2, 4, 8, 3, 1]
+
+B)
+
+Árvore inicial:
+            20
+        10      15
+      4    7  8    3
+    1  2
+vetor: [20, 10, 15, 4, 7, 8, 3, 1, 2]
+
+Passo 1: Inclusão do elemento 16 no último nível:
+            20
+        10      15
+      4    7  8    3
+    1  2 16
+vetor: [20, 10, 15, 4, 7, 8, 3, 1, 2, 16]
+
+Passo 2: troca o 16 com o 7:
+            20
+        10      15
+      4   16  8    3
+    1  2 7
+vetor: [20, 10, 15, 4, 16, 8, 3, 1, 2, 7]
+
+Passo 3: troca o 10 com o 16:
+            20
+        16      15
+      4   10  8    3
+    1  2 7
+vetor: [20, 16, 15, 4, 10, 8, 3, 1, 2, 7]
+
